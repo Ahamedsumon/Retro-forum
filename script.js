@@ -16,11 +16,14 @@
 
 
 
-fetch('https://openapi.programming-hero.com/api/retro-forum/posts')
+const post = fetch('https://openapi.programming-hero.com/api/retro-forum/posts')
 .then(res => res.json())
-.then(data => console.log(data))
+.then(data => {
+    const valuesArray = Object.values(data);
+    console.log(valuesArray)
+    valuesArray.forEach(element => {
+        console.log(element)
+    });
+})
 
 
-data.forEach(element => {
-    
-});
