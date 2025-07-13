@@ -172,7 +172,7 @@ const displayLatestPosts = (posts) => {
       <div class="border border-bg-[#12132D24] rounded-2xl p-5">
             <img src="${post.cover_image}" alt="">
             <div class="max-w-xs h-32 bg-[#12132D96] mx-auto"></div>
-            <p class="text-sm text-[#12132D96]">${post.author.posted_date}</p>
+            <p class="text-sm text-[#12132D96]">${post.author.posted_date? post.author.posted_date: 'No publish Date'}</p>
             <h2 class="text-lg font-bold">${post.title}</h2>
             <p class="text-[#12132D96] text-m">${post.description
 }</p>
@@ -180,7 +180,7 @@ const displayLatestPosts = (posts) => {
               <img src="" alt="">
               <div>
                 <p class="font-semibold">${post.author.name}</p>
-                <p class="text-sm text-[#12132D96]">${post.author?.designation}</p>
+                <p class="text-sm text-[#12132D96]">${post.author.designation? post.author.designation: 'Unknown'}</p>
               </div>
             </div>
           </div>

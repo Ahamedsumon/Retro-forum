@@ -6,6 +6,10 @@
     <title>Retro Forum</title>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/4.1.11/lib.min.js" integrity="sha512-tE7j0ptGYRtx0sHRAOkHNLAuIqVW7udzmjvNh1A6vIEnWUJnx7j7khwTEjemjDaauV+lHo0jEtdW8jn5weoxhw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
      
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -16,10 +20,17 @@
           <img src="/images/logo.png" alt="">
         </div>
         <ul class="flex gap-3">
-          <li class="cursor-pointer tooltip" data-tip="hello"><i class="fa-solid fa-house border p-2 rounded-full"></i></li>
+          <li data-tooltip-target="tooltip-default" class="cursor-pointer tooltip" data-tip="helllo"><i class="fa-solid fa-house border p-2 rounded-full"></i></li>
+
+
           <li class="cursor-pointer"><i class="fa-solid fa-pencil border p-2 rounded-full"></i></li>
+
+
           <li class="cursor-pointer"><i class="fa-solid fa-user-plus border p-2 rounded-full"></i></li>
+
+
           <li class="cursor-pointer"><i class="fa-solid fa-flag border p-2 rounded-full"></i></li>
+          
           <button class="btn bg-[#797DFCFF] text-white text-lg font-semibold px-4 py-1 rounded-2xl">Sign In</button>
         </ul>
         
@@ -49,7 +60,9 @@
         </div>
       </section>
 
-
+      <!-- <div class="tooltip" data-tip="hello">
+  <button class="btn">Hover me</button>
+</div> -->
       <!-- Lets Discuss Section -->
 
       <section class="my-20">
